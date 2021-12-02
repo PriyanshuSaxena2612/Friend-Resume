@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --darkest-blue: #1a237e;
+  --darker-blue: #283593;
+  --dark-blue: #303f9f;
+  --medium-blue: #3949ab;
+  --light-blue: #3f51b5;
+  --lighter-blue: #5c6bc0;
+  --lightest-blue: #9fa8da;
+  --white: #ffffff;
+  --black: #0e1442;
+  --orange: #ffb300;
+  --yellow: #fdd835;
+  --dark-pink: #ad1457;
+  --light-pink: #d81b60;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  text-transform: capitalize;
+  /* list-style-type: none; */
+}
+
+body {
+  background-color: var(--darkest-blue);
+}
+
+.container {
+  display: flex;
+}
+
+h1, h2, h3, h4 {
+  color: var(--orange);
+}
+
+.sidebar {
+  width: 20vw;
+  border-radius: 10px;
+  min-height: 100vh;
+  /* position: fixed; */
+  background-color: var(--medium-blue);
+}
+
+.sidebar .name-heading {
+  font-size: 2rem;
+  background-color: var(--orange);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.sidebar .name-heading .logo {
+  font-size: 5rem;
+  color: var(--darker-blue);
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+.sidebar .name-heading h3 {
+  color: var(--darkest-blue);
+}
+
+.sidebar .name-heading h5 {
+  color: var(--dark-blue)
+}
+
+.content {
+  margin-top: 2rem;
+  padding: 0 1.25rem 0 1.25rem;
+}
+
+.content .about-me p {
+  padding: 0.5rem 0 0 0;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.content .contact {
+  margin-top: 2.5rem;
+}
+
+.content .contact .links {
+  padding: 0.5rem 0 0 0;
+}
+
+.content .contact .links li {
+  display: block;
+  line-height: 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.contact-icons {
+  font-size: 30rem;
+  color: var(--orange);
+}
+
+.content span {
+  padding: 0.5rem;
+}
+
+.content .follow-me {
+  margin-top: 2.5rem;
+}
+
+.follow-me .icons {
+  padding-top: 0.5rem;
+  /* width: 5vw; */
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.follow-me .icons a {
+  /* position: absolute; */
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* height: 4rem; */
+  color: var(--dark-blue);
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.follow-me .icons a:hover {
+  transform: rotate(360deg);
+  /* background-color: var(--yellow); */
+}
+
+.main-section {
+  display: grid;
+  min-height: 100vh;
+  min-width: 78vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-section .main-container {
+  color: white;
+  /* height: 40vh; */
+  /* justify-content: center;
+  align-items: center; */
+  margin: 2.5rem 0 0 2.5rem;
+  background: var(--light-blue);
+  padding: 1.5rem;
+  opacity: 0.7;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.main-section .main-container .links {
+  padding-top: 1.25rem;
+}
+
+.main-section .main-container .links li {
+  line-height: 2;
+}
+
+.degree {
+  font-weight: 1000;
+  font-size: 1.25rem;
+}
+
+/* .education{
+  opacity: 0.7;
+} */
+
+.education:hover, .skills:hover {
+  opacity: 1;
+}
+
+
+.degree:hover {
+  color: var(--yellow);
+}
+
+
+
+
+
+.skills-proficient {
+  grid-column: 1/3;
+
+}
+
+.skills-container {
+  width: 100%;
+  color: white;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); */
+  padding: 10px;
+  margin: 0.8rem 0 0 0;
+}
+
+.bar {
+  background: white;
+  display: block;
+  overflow: hidden;
+  height: 0.3rem;
+  border-radius: 10px;
+}
+
+.bar span {
+  height: 0.3rem;
+  border-radius: 10px;
+  float: left;
+  background: var(--orange);
+}
+
+.cpp {
+  width: 90%;
+}
+
+.java {
+  width: 50%;
+}
+
+.html-css {
+  width: 70%;
+}
+
+.hadoop {
+  width: 80%;
+}
+
+.python {
+  width: 85%;
+}
+
+.machine-learning {
+  width: 75%;
+}
+
+.skills-proficient:hover {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--orange));
+  border-radius: 6px;
+}
+
+.upper-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  gap: 1.5rem;
+}
+
+.upper-part>.logo{
+  height: 4rem;
+  text-align: center;
+  line-height: 4.6;
+  width: 4rem;
+  border: 1px solid orange;
+  background: var(--orange);
+  border-radius: 50%;
+}
